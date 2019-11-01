@@ -3,7 +3,7 @@ module.exports = {
     title: 'Another Blog',
     author: 'DQ',
     description: '',
-    // siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://dongtc.github.io`,
     social: {
       twitter: '',
     },
