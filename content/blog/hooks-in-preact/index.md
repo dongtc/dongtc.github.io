@@ -4,13 +4,11 @@ date: "2019-11-01"
 description: ""
 ---
 
-React Hooks已经发布一段时间，[Preact](https://github.com/preactjs/preact)在最新的版本10.x中也添加了Hooks的实现。
-
 Preact是一个精简版(3k)的React实现，其对Hooks的实现代码也很简单，通过对源码的阅读，可以非常容易的理解Hooks的各种规则。
 
 Hooks只能用在Function组件里，我们知道Class组件可以维持状态，而Funciton组件是没有状态的，那么Hooks的状态是存在哪里的呢？
 
-这里就需要对React的实现有一定了解了，实际上一个Function组件，React内部还是会将其转化成Class，也就是通过 `new React.Component()` 来生成一个组件实例，
+这里就需要对Preact的实现有一定了解了，实际上一个Function组件，Preact内部还是会将其转化成Class，也就是通过 `new React.Component()` 来生成一个组件实例，
 然后将Function函数赋值给实例的 `render` 方法。
 
 所以一个Function组件也是有一个组件实例的，所有的Hooks状态都存在这个实例上。
